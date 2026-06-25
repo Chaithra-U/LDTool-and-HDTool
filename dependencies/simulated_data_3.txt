@@ -1,0 +1,65 @@
+Check for logical and functional dependencies in file 'simulated_data_3.csv'
+
+-------------------------------------
+Data           | simulated_data_3.csv
+No. of rows    | 100                 
+No. of columns | 7                   
+No. of LDs     | 17                  
+No. of FDs     | 6                   
+-------------------------------------
+
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Condition | Implication               
+--------------------------------------
+Q = 0     | Functional dependency (FD)
+0 < Q < 1 | Logical dependency (LD)   
+Q = 1     | No dependency             
+Lower Q   | Stronger dependency       
+--------------------------------------
+
+Note: Functional dependencies are a special case of logical dependencies.
+
+
+Layer 1 (5 dependencies)
+----------------------------------------
+{ "B" } ~> { "G" } (q=0.1667)
+{ "G" } ~> { "D" } (q=0.1000)
+{ "G" } ~> { "E" } (q=0.1000)
+{ "G" } ~> { "F" } (q=0.2000)
+{ "G" } ~> { "H" } (q=0.2000)
+
+Layer 2 (12 dependencies)
+----------------------------------------
+{ "B", "C" } ~> { "D" } (q=0.1351)
+{ "B", "C" } ~> { "E" } (q=0.1351)
+{ "B", "C" } ~> { "F" } (q=0.1622)
+{ "B", "C" } ~> { "H" } (q=0.1622)
+{ "B", "D" } ~> { "C" } (q=0.1325)
+{ "B", "E" } ~> { "C" } (q=0.1325)
+{ "B", "F" } ~> { "D" } (q=0.1103)
+{ "B", "F" } ~> { "E" } (q=0.1103)
+{ "B", "G" } ~> { "C" } (q=0.0706)
+{ "B", "H" } ~> { "D" } (q=0.1103)
+{ "B", "H" } ~> { "E" } (q=0.1103)
+{ "C", "G" } ~> { "B" } (q=0.1620)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (4 dependencies)
+----------------------------------------
+{ "D" } -> { "E", "F", "H" }
+{ "E" } -> { "D", "F", "H" }
+{ "F" } -> { "H" }
+{ "H" } -> { "F" }
+
+Layer 2 (2 dependencies)
+----------------------------------------
+{ "F", "G" } -> { "D", "E" }
+{ "G", "H" } -> { "D", "E" }
