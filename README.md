@@ -10,9 +10,6 @@ This repository presents **LDTool** and **HLDTool**, two frameworks for extracti
 <b>Overview of the proposed dependency extraction framework.</b>
 </p>
 
----
-
-## Overview
 
 The proposed framework supports dependency discovery under different feature dimensionalities.
 
