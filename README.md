@@ -31,6 +31,9 @@ dependencies/
     METABRIC/
         Dependencies extracted using different hyperedge sizes
 
+hyperedges/
+        Extracted hyperedges using different hyperedge sizes
+
 visualization/
     example.ipynb            # Example dependency visualization
     functions.py             # Visualization functions
