@@ -3,15 +3,6 @@
 This repository presents **LDTool** and **HLDTool**, two frameworks for extracting **multi-attribute logical dependencies (LDs)** and **functional dependencies (FDs)** from tabular data. 
 
 ---
-
-<p align="center">
-  <img src="figures/workflow.pdf" width="900">
-</p>
-
-<p align="center">
-<b>Overview of the proposed dependency extraction framework. </b>
-</p>
-
 ## Overview
 
 The proposed framework supports dependency discovery under different feature dimensionalities.
