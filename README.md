@@ -5,7 +5,7 @@ This repository presents **LDTool** and **HLDTool**, two frameworks for extracti
 ---
 
 <p align="center">
-  <img src="figures/workflow.png" width="900">
+  <img src="figures/workflow.jpg" width="900">
 </p>
 
 <p align="center">
