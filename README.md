@@ -16,11 +16,6 @@ This repository presents **LDTool** and **HLDTool**, two frameworks for extracti
 datasets/
     Preprocessed datasets used in the paper.
 
-src/
-    ldtool.py                # Multi-attribute LD and FD extraction
-    hldtool.py               # Hypergraph-guided dependency extraction
-    ldtool_q_matrix.py       # First-layer dependency extraction on pre computed $Q$-matrix
-
 dependencies/
     Extracted dependencies for all datasets
     METABRIC/
@@ -28,6 +23,16 @@ dependencies/
 
 hyperedges/
         Extracted hyperedges using different hyperedge sizes
+
+qMatrix_computation/
+        qMatrix.py will compute the dependency matrix using KDTree and a brute-force approach
+        qFunction/
+            Functions to compute qMatrix using both approaches
+
+src/
+    ldtool.py                # Multi-attribute LD and FD extraction
+    hldtool.py               # Hypergraph-guided dependency extraction
+    ldtool_q_matrix.py       # First-layer dependency extraction on pre computed $Q$-matrix
 
 visualization/
     example.ipynb            # Example dependency visualization
