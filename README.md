@@ -25,7 +25,7 @@ hyperedges/
         Extracted hyperedges using different hyperedge sizes
 
 qMatrix_computation/
-        qMatrix.py will compute the dependency matrix using KDTree and a brute-force approach
+        qMatrix.py will compute the dependency matrix using VPTree and a brute-force approach
         qFunction/
             Functions to compute qMatrix using both approaches
 
@@ -88,11 +88,15 @@ The `datasets` folder contains the preprocessed datasets used in the paper.
 | Dataset | Source |
 |---------|--------|
 | Shopping Behavior | [Kaggle](https://www.kaggle.com/datasets/sahilislam007/shopping-trends-and-customer-behaviour-dataset) |
+| Adult | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult) |
 | Online Shopping | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset) |
 | Migraine | [Code Ocean](https://codeocean.com/capsule/1269964/tree/v1/data/migraine.csv) |
+| Mushroom | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/73/mushroom) |
 | Global House Purchase | [Kaggle](https://www.kaggle.com/datasets/mohankrishnathalla/global-house-purchase-decision-dataset) |
 | Consumer Shopping Trends | [Kaggle](https://www.kaggle.com/datasets/sohaibdevv/consumer-shopping-behavior-and-preference-study-2026) |
 | METABRIC | [Kaggle](https://www.kaggle.com/datasets/raghadalharbi/breast-cancer-gene-expression-profiles-metabric) |
+| US Census | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/116/us+census+data+1990) |
+| TIC Insurance | [UCI Machine Learning Repository]([https://archive.ics.uci.edu/dataset/73/mushroom](https://archive.ics.uci.edu/dataset/125/insurance+company+benchmark+coil+2000)) |
 | Student Digital Behavior | [Kaggle](https://www.kaggle.com/datasets/nitikachandel95/student-social-media-impact-dataset?select=global_student_digital_behavior_dataset.csv) |
 
 ---
