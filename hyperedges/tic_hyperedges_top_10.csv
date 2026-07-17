@@ -1,0 +1,68 @@
+hyperedge_id,num_features,features
+H1,11,Contribution Agricultural Machine Policies;Contribution Boat Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Private Accident Insurance Policies;Contribution Surfboard Policies;Customer Main Type;Customer Subtype;Number of Agricultural Machine Policies;Number of Lorry Policies;Number of Surfboard Policies
+H2,11,Contribution Agricultural Machine Policies;Contribution Delivery Van Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Number of Agricultural Machine Policies;Number of Delivery Van Policies;Number of Disability Insurance Policies;Number of Houses;Number of Lorry Policies;Number of Surfboard Policies
+H3,3,Average Household Size;Contribution Surfboard Policies;Number of Surfboard Policies
+H4,3,Average Age;Contribution Surfboard Policies;Number of Surfboard Policies
+H5,3,Contribution Surfboard Policies;Customer Main Type;Customer Subtype
+H6,9,Contribution Agricultural Machine Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Property Insurance Policies;Contribution Surfboard Policies;Number of Agricultural Machine Policies;Number of Lorry Policies;Number of Surfboard Policies;Roman Catholic
+H7,4,Contribution Lorry Policies;Contribution Surfboard Policies;Number of Surfboard Policies;Protestant
+H8,3,Contribution Surfboard Policies;Number of Surfboard Policies;Other Religion
+H9,4,Contribution Lorry Policies;Contribution Surfboard Policies;No Religion;Number of Surfboard Policies
+H10,5,Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Married;Number of Lorry Policies
+H11,3,Contribution Surfboard Policies;Living Together;Number of Surfboard Policies
+H12,4,Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Other Relation
+H13,3,Contribution Lorry Policies;Contribution Surfboard Policies;Singles
+H14,5,Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Household Without Children;Number of Lorry Policies
+H15,4,Contribution Lorry Policies;Contribution Surfboard Policies;Household With Children;Number of Surfboard Policies
+H16,6,Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;High Level Education;Number of Agricultural Machine Policies;Number of Surfboard Policies
+H17,2,Contribution Surfboard Policies;Medium Level Education
+H18,2,Contribution Surfboard Policies;Lower Level Education
+H19,2,Contribution Surfboard Policies;High Status
+H20,8,Contribution Lorry Policies;Contribution Private Accident Insurance Policies;Contribution Property Insurance Policies;Contribution Surfboard Policies;Farmer;Number of Houses;Number of Property Insurance Policies;Number of Surfboard Policies
+H21,4,Contribution Lorry Policies;Contribution Surfboard Policies;Middle Management;Number of Lorry Policies
+H22,3,Contribution Surfboard Policies;Number of Surfboard Policies;Skilled Labourers
+H23,2,Contribution Surfboard Policies;Unskilled Labourers
+H24,4,Contribution Lorry Policies;Contribution Surfboard Policies;Number of Lorry Policies;Social Class A
+H25,5,Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Number of Lorry Policies;Social Class B1
+H26,5,Contribution Lorry Policies;Contribution Surfboard Policies;Number of Lorry Policies;Number of Surfboard Policies;Social Class B2
+H27,5,Contribution Lorry Policies;Contribution Surfboard Policies;Number of Lorry Policies;Number of Surfboard Policies;Social Class C
+H28,5,Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Number of Surfboard Policies;Social Class D
+H29,5,Contribution Lorry Policies;Contribution Surfboard Policies;Home Owners;Number of Lorry Policies;Rented House
+H30,2,Contribution Surfboard Policies;One Car
+H31,2,Contribution Surfboard Policies;Two Cars
+H32,4,Contribution Lorry Policies;Contribution Surfboard Policies;No Car;Number of Surfboard Policies
+H33,6,Contribution Lorry Policies;Contribution Surfboard Policies;National Health Service;Number of Lorry Policies;Number of Surfboard Policies;Private Health Insurance
+H34,5,Contribution Lorry Policies;Contribution Surfboard Policies;Income Less Than 30000;Number of Lorry Policies;Number of Surfboard Policies
+H35,3,Contribution Surfboard Policies;Income 30000 to 45000;Number of Surfboard Policies
+H36,5,Contribution Lorry Policies;Contribution Surfboard Policies;Income 45000 to 75000;Number of Lorry Policies;Number of Surfboard Policies
+H37,9,Contribution Agricultural Machine Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Income 75000 to 122000;Number of Agricultural Machine Policies;Number of Houses;Number of Lorry Policies;Number of Surfboard Policies
+H38,11,Contribution Agricultural Machine Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Private Accident Insurance Policies;Contribution Surfboard Policies;Income Greater Than 123000;Number of Agricultural Machine Policies;Number of Delivery Van Policies;Number of Houses;Number of Lorry Policies;Number of Surfboard Policies
+H39,5,Average Income;Contribution Lorry Policies;Contribution Surfboard Policies;Number of Lorry Policies;Number of Surfboard Policies
+H40,2,Contribution Surfboard Policies;Purchasing Power Class
+H41,11,Contribution Bicycle Policies;Contribution Boat Policies;Contribution Family Accident Insurance Policies;Contribution Moped Policies;Contribution Private Accident Insurance Policies;Contribution Surfboard Policies;Contribution Third Party Insurance Firms;Number of Family Accident Insurance Policies;Number of Moped Policies;Number of Private Accident Insurance Policies;Number of Third Party Insurance Firms
+H42,2,Contribution Third Party Insurance Agriculture;Number of Third Party Insurance Agriculture
+H43,2,Contribution Car Policies;Contribution Surfboard Policies
+H44,2,Contribution Delivery Van Policies;Number of Delivery Van Policies
+H45,10,Contribution Agricultural Machine Policies;Contribution Boat Policies;Contribution Lorry Policies;Contribution Motorcycle Scooter Policies;Contribution Surfboard Policies;Contribution Third Party Insurance Firms;Contribution Trailer Policies;Number of Agricultural Machine Policies;Number of Lorry Policies;Number of Surfboard Policies
+H46,2,Contribution Lorry Policies;Number of Lorry Policies
+H47,9,Contribution Boat Policies;Contribution Disability Insurance Policies;Contribution Motorcycle Scooter Policies;Contribution Private Accident Insurance Policies;Contribution Social Security Insurance Policies;Contribution Trailer Policies;Number of Disability Insurance Policies;Number of Social Security Insurance Policies;Number of Trailer Policies
+H48,3,Contribution Surfboard Policies;Contribution Tractor Policies;Number of Surfboard Policies
+H49,11,Contribution Agricultural Machine Policies;Contribution Bicycle Policies;Contribution Boat Policies;Contribution Family Accident Insurance Policies;Contribution Life Insurance Policies;Contribution Motorcycle Scooter Policies;Contribution Property Insurance Policies;Contribution Social Security Insurance Policies;Contribution Surfboard Policies;Income Greater Than 123000;Number of Motorcycle Scooter Policies
+H50,11,Contribution Boat Policies;Contribution Delivery Van Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Moped Policies;Contribution Private Accident Insurance Policies;Contribution Property Insurance Policies;Contribution Surfboard Policies;Contribution Third Party Insurance Firms;Number of Delivery Van Policies;Number of Third Party Insurance Firms
+H51,11,Contribution Agricultural Machine Policies;Contribution Boat Policies;Contribution Disability Insurance Policies;Contribution Life Insurance Policies;Contribution Lorry Policies;Contribution Surfboard Policies;Number of Agricultural Machine Policies;Number of Delivery Van Policies;Number of Disability Insurance Policies;Number of Lorry Policies;Number of Surfboard Policies
+H52,11,Contribution Bicycle Policies;Contribution Delivery Van Policies;Contribution Disability Insurance Policies;Contribution Family Accident Insurance Policies;Contribution Lorry Policies;Contribution Moped Policies;Contribution Private Accident Insurance Policies;Contribution Property Insurance Policies;Contribution Surfboard Policies;Contribution Third Party Insurance Firms;Number of Private Accident Insurance Policies
+H53,2,Contribution Family Accident Insurance Policies;Number of Family Accident Insurance Policies
+H54,11,Contribution Bicycle Policies;Contribution Boat Policies;Contribution Disability Insurance Policies;Contribution Family Accident Insurance Policies;Contribution Moped Policies;Contribution Private Accident Insurance Policies;Contribution Property Insurance Policies;Contribution Surfboard Policies;Contribution Trailer Policies;Number of Disability Insurance Policies;Number of Houses
+H55,3,Contribution Fire Policies;Contribution Lorry Policies;Contribution Surfboard Policies
+H56,2,Contribution Surfboard Policies;Number of Surfboard Policies
+H57,11,Contribution Agricultural Machine Policies;Contribution Bicycle Policies;Contribution Boat Policies;Contribution Delivery Van Policies;Contribution Disability Insurance Policies;Contribution Family Accident Insurance Policies;Contribution Lorry Policies;Contribution Moped Policies;Contribution Third Party Insurance Firms;Number of Boat Policies;Number of Third Party Insurance Firms
+H58,11,Contribution Agricultural Machine Policies;Contribution Delivery Van Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Moped Policies;Contribution Private Accident Insurance Policies;Contribution Property Insurance Policies;Number of Agricultural Machine Policies;Number of Delivery Van Policies;Number of Lorry Policies;Number of Property Insurance Policies
+H59,11,Contribution Agricultural Machine Policies;Contribution Disability Insurance Policies;Contribution Lorry Policies;Contribution Private Accident Insurance Policies;Contribution Social Security Insurance Policies;Contribution Surfboard Policies;Contribution Trailer Policies;Number of Agricultural Machine Policies;Number of Lorry Policies;Number of Social Security Insurance Policies;Number of Trailer Policies
+H60,3,Contribution Car Policies;Contribution Surfboard Policies;Number of Car Policies
+H61,11,Contribution Boat Policies;Contribution Delivery Van Policies;Contribution Family Accident Insurance Policies;Contribution Moped Policies;Contribution Private Accident Insurance Policies;Contribution Property Insurance Policies;Contribution Surfboard Policies;Number of Delivery Van Policies;Number of Family Accident Insurance Policies;Number of Moped Policies;Number of Private Accident Insurance Policies
+H62,2,Contribution Trailer Policies;Number of Trailer Policies
+H63,3,Contribution Surfboard Policies;Number of Surfboard Policies;Number of Tractor Policies
+H64,11,Contribution Bicycle Policies;Contribution Boat Policies;Contribution Family Accident Insurance Policies;Contribution Life Insurance Policies;Contribution Motorcycle Scooter Policies;Contribution Property Insurance Policies;Contribution Social Security Insurance Policies;Contribution Surfboard Policies;Income Greater Than 123000;Number of Agricultural Machine Policies;Number of Motorcycle Scooter Policies
+H65,5,Contribution Lorry Policies;Contribution Surfboard Policies;Number of Life Insurance Policies;Number of Lorry Policies;Number of Surfboard Policies
+H66,2,Contribution Lorry Policies;Number of Fire Policies
+H67,2,Contribution Bicycle Policies;Number of Bicycle Policies
