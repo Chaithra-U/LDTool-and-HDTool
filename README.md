@@ -96,7 +96,7 @@ The `datasets` folder contains the preprocessed datasets used in the paper.
 | Consumer Shopping Trends | [Kaggle](https://www.kaggle.com/datasets/sohaibdevv/consumer-shopping-behavior-and-preference-study-2026) |
 | METABRIC | [Kaggle](https://www.kaggle.com/datasets/raghadalharbi/breast-cancer-gene-expression-profiles-metabric) |
 | US Census | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/116/us+census+data+1990) |
-| TIC Insurance | [UCI Machine Learning Repository]([https://archive.ics.uci.edu/dataset/73/mushroom](https://archive.ics.uci.edu/dataset/125/insurance+company+benchmark+coil+2000)) |
+| TIC Insurance | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/125/insurance+company+benchmark+coil+2000) |
 | Student Digital Behavior | [Kaggle](https://www.kaggle.com/datasets/nitikachandel95/student-social-media-impact-dataset?select=global_student_digital_behavior_dataset.csv) |
 
 ---
