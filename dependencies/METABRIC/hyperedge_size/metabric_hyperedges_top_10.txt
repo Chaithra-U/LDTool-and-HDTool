@@ -1,0 +1,1113 @@
+Check for hyperedge-based logical and functional dependencies in file 'METABRIC.csv'
+
+------------------------------------------------------
+Data                  | METABRIC.csv                  
+Hyperedge file        | metabric_hyperedges_top_10.csv
+No. of rows           | 1092                          
+No. of columns        | 642                           
+No. of hyperedges     | 11                            
+No. of LD occurrences | 776                           
+No. of unique LDs     | 690                           
+No. of FD occurrences | 150                           
+No. of unique FDs     | 97                            
+------------------------------------------------------
+
+
+Logical dependency interpretation
+----------------------------------------
+Condition | Implication               
+--------------------------------------
+Q = 0     | Functional dependency (FD)
+0 < Q < 1 | Logical dependency (LD)   
+Q = 1     | No dependency             
+Lower Q   | Stronger dependency       
+--------------------------------------
+
+Note: Functional dependencies are a special case of logical dependencies.
+
+
+##################################################
+Hyperedge H1
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (26 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "overall_survival_months" } ~> { "nottingham_prognostic_index" } (q=0.0004)
+{ "age_at_diagnosis" } ~> { "nottingham_prognostic_index" } (q=0.0006)
+{ "overall_survival_months" } ~> { "brip1_mut" } (q=0.0010)
+{ "overall_survival_months" } ~> { "gps2_mut" } (q=0.0010)
+{ "age_at_diagnosis" } ~> { "brip1_mut" } (q=0.0010)
+{ "age_at_diagnosis" } ~> { "casp8_mut" } (q=0.0010)
+{ "age_at_diagnosis" } ~> { "gps2_mut" } (q=0.0010)
+{ "age_at_diagnosis" } ~> { "map3k10_mut" } (q=0.0010)
+{ "age_at_diagnosis" } ~> { "men1_mut" } (q=0.0010)
+{ "age_at_diagnosis" } ~> { "npnt_mut" } (q=0.0010)
+{ "overall_survival_months" } ~> { "casp8_mut" } (q=0.0020)
+{ "overall_survival_months" } ~> { "map3k10_mut" } (q=0.0020)
+{ "overall_survival_months" } ~> { "npnt_mut" } (q=0.0020)
+{ "overall_survival_months" } ~> { "men1_mut" } (q=0.0029)
+{ "nottingham_prognostic_index" } ~> { "overall_survival_months" } (q=0.0045)
+{ "nottingham_prognostic_index" } ~> { "age_at_diagnosis" } (q=0.0047)
+{ "overall_survival_months" } ~> { "inferred_menopausal_state" } (q=0.0294)
+{ "nottingham_prognostic_index" } ~> { "flt3_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "casp8_mut" } (q=0.0462)
+{ "nottingham_prognostic_index" } ~> { "brip1_mut" } (q=0.0564)
+{ "nottingham_prognostic_index" } ~> { "gps2_mut" } (q=0.0564)
+{ "nottingham_prognostic_index" } ~> { "men1_mut" } (q=0.0667)
+{ "nottingham_prognostic_index" } ~> { "npnt_mut" } (q=0.0667)
+{ "nottingham_prognostic_index" } ~> { "map3k10_mut" } (q=0.0821)
+
+Layer 3 (132 dependencies)
+----------------------------------------
+{ "flt3_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1242)
+{ "flt3_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.1281)
+{ "brip1_mut", "flt3_mut", "inferred_menopausal_state" } ~> { "age_at_diagnosis" } (q=0.1421)
+{ "casp8_mut", "flt3_mut", "inferred_menopausal_state" } ~> { "age_at_diagnosis" } (q=0.1421)
+{ "flt3_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1421)
+{ "brip1_mut", "casp8_mut", "inferred_menopausal_state" } ~> { "age_at_diagnosis" } (q=0.1423)
+{ "gps2_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1423)
+{ "inferred_menopausal_state", "map3k10_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1423)
+{ "brip1_mut", "flt3_mut", "inferred_menopausal_state" } ~> { "overall_survival_months" } (q=0.1462)
+{ "brip1_mut", "casp8_mut", "inferred_menopausal_state" } ~> { "overall_survival_months" } (q=0.1465)
+{ "casp8_mut", "flt3_mut", "inferred_menopausal_state" } ~> { "overall_survival_months" } (q=0.1465)
+{ "flt3_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1465)
+{ "gps2_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.1466)
+{ "inferred_menopausal_state", "map3k10_mut", "men1_mut" } ~> { "overall_survival_months" } (q=0.1466)
+{ "flt3_mut", "gps2_mut", "inferred_menopausal_state" } ~> { "age_at_diagnosis" } (q=0.1660)
+{ "flt3_mut", "inferred_menopausal_state", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1660)
+{ "brip1_mut", "flt3_mut", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "brip1_mut", "flt3_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "brip1_mut", "gps2_mut", "inferred_menopausal_state" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "brip1_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "brip1_mut", "inferred_menopausal_state", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "brip1_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "casp8_mut", "flt3_mut", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "casp8_mut", "flt3_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "casp8_mut", "gps2_mut", "inferred_menopausal_state" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "casp8_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "casp8_mut", "inferred_menopausal_state", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "casp8_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "flt3_mut", "gps2_mut", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "flt3_mut", "map3k10_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "flt3_mut", "map3k10_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "gps2_mut", "inferred_menopausal_state", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "gps2_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "inferred_menopausal_state", "map3k10_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "inferred_menopausal_state", "men1_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1662)
+{ "gps2_mut", "map3k10_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1663)
+{ "brip1_mut", "flt3_mut", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.1663)
+{ "brip1_mut", "flt3_mut", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1663)
+{ "flt3_mut", "gps2_mut", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.1663)
+{ "casp8_mut", "flt3_mut", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.1665)
+{ "casp8_mut", "flt3_mut", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1665)
+{ "flt3_mut", "map3k10_mut", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1665)
+{ "flt3_mut", "map3k10_mut", "men1_mut" } ~> { "overall_survival_months" } (q=0.1667)
+{ "brip1_mut", "flt3_mut", "map3k10_mut" } ~> { "casp8_mut" } (q=0.1667)
+{ "brip1_mut", "flt3_mut", "npnt_mut" } ~> { "casp8_mut" } (q=0.1667)
+{ "brip1_mut", "flt3_mut", "npnt_mut" } ~> { "gps2_mut" } (q=0.1667)
+{ "brip1_mut", "flt3_mut", "npnt_mut" } ~> { "men1_mut" } (q=0.1667)
+{ "casp8_mut", "flt3_mut", "map3k10_mut" } ~> { "brip1_mut" } (q=0.1667)
+{ "casp8_mut", "flt3_mut", "npnt_mut" } ~> { "brip1_mut" } (q=0.1667)
+{ "casp8_mut", "flt3_mut", "npnt_mut" } ~> { "gps2_mut" } (q=0.1667)
+{ "casp8_mut", "flt3_mut", "npnt_mut" } ~> { "men1_mut" } (q=0.1667)
+{ "gps2_mut", "map3k10_mut", "men1_mut" } ~> { "brip1_mut" } (q=0.1667)
+{ "gps2_mut", "map3k10_mut", "men1_mut" } ~> { "casp8_mut" } (q=0.1667)
+{ "gps2_mut", "map3k10_mut", "men1_mut" } ~> { "npnt_mut" } (q=0.1667)
+{ "gps2_mut", "map3k10_mut", "men1_mut" } ~> { "overall_survival_months" } (q=0.1668)
+{ "brip1_mut", "gps2_mut", "inferred_menopausal_state" } ~> { "overall_survival_months" } (q=0.1709)
+{ "brip1_mut", "inferred_menopausal_state", "men1_mut" } ~> { "overall_survival_months" } (q=0.1709)
+{ "flt3_mut", "gps2_mut", "inferred_menopausal_state" } ~> { "overall_survival_months" } (q=0.1709)
+{ "flt3_mut", "inferred_menopausal_state", "men1_mut" } ~> { "overall_survival_months" } (q=0.1709)
+{ "brip1_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.1711)
+{ "brip1_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1711)
+{ "gps2_mut", "inferred_menopausal_state", "men1_mut" } ~> { "overall_survival_months" } (q=0.1711)
+{ "casp8_mut", "gps2_mut", "inferred_menopausal_state" } ~> { "overall_survival_months" } (q=0.1712)
+{ "casp8_mut", "inferred_menopausal_state", "men1_mut" } ~> { "overall_survival_months" } (q=0.1712)
+{ "gps2_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1712)
+{ "inferred_menopausal_state", "men1_mut", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1712)
+{ "casp8_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.1714)
+{ "casp8_mut", "inferred_menopausal_state", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1714)
+{ "inferred_menopausal_state", "map3k10_mut", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1714)
+{ "flt3_mut", "inferred_menopausal_state", "map3k10_mut" } ~> { "nottingham_prognostic_index" } (q=0.1856)
+{ "casp8_mut", "flt3_mut", "npnt_mut" } ~> { "nottingham_prognostic_index" } (q=0.1873)
+{ "brip1_mut", "flt3_mut", "npnt_mut" } ~> { "nottingham_prognostic_index" } (q=0.1881)
+{ "casp8_mut", "flt3_mut", "map3k10_mut" } ~> { "nottingham_prognostic_index" } (q=0.1890)
+{ "brip1_mut", "flt3_mut", "map3k10_mut" } ~> { "nottingham_prognostic_index" } (q=0.1899)
+{ "flt3_mut", "gps2_mut", "map3k10_mut" } ~> { "nottingham_prognostic_index" } (q=0.1899)
+{ "flt3_mut", "map3k10_mut", "men1_mut" } ~> { "nottingham_prognostic_index" } (q=0.1916)
+{ "flt3_mut", "map3k10_mut", "npnt_mut" } ~> { "nottingham_prognostic_index" } (q=0.1916)
+{ "gps2_mut", "map3k10_mut", "men1_mut" } ~> { "nottingham_prognostic_index" } (q=0.1950)
+{ "brip1_mut", "casp8_mut", "flt3_mut" } ~> { "age_at_diagnosis" } (q=0.1996)
+{ "brip1_mut", "flt3_mut", "gps2_mut" } ~> { "age_at_diagnosis" } (q=0.1996)
+{ "brip1_mut", "flt3_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1996)
+{ "casp8_mut", "flt3_mut", "gps2_mut" } ~> { "age_at_diagnosis" } (q=0.1996)
+{ "casp8_mut", "flt3_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1996)
+{ "flt3_mut", "gps2_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1996)
+{ "flt3_mut", "men1_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1996)
+{ "brip1_mut", "flt3_mut", "gps2_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "brip1_mut", "casp8_mut", "gps2_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "brip1_mut", "casp8_mut", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "brip1_mut", "casp8_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "brip1_mut", "casp8_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "brip1_mut", "gps2_mut", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "brip1_mut", "map3k10_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "casp8_mut", "gps2_mut", "map3k10_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "casp8_mut", "map3k10_mut", "men1_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "gps2_mut", "map3k10_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "map3k10_mut", "men1_mut", "npnt_mut" } ~> { "age_at_diagnosis" } (q=0.1998)
+{ "brip1_mut", "casp8_mut", "flt3_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "casp8_mut", "flt3_mut", "gps2_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "flt3_mut", "gps2_mut", "npnt_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "brip1_mut", "casp8_mut", "flt3_mut" } ~> { "gps2_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "flt3_mut" } ~> { "men1_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "gps2_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "gps2_mut" } ~> { "men1_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "gps2_mut" } ~> { "npnt_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "map3k10_mut" } ~> { "npnt_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "men1_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "men1_mut" } ~> { "gps2_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "men1_mut" } ~> { "npnt_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "npnt_mut" } ~> { "gps2_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "npnt_mut" } ~> { "map3k10_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "npnt_mut" } ~> { "men1_mut" } (q=0.2000)
+{ "brip1_mut", "flt3_mut", "gps2_mut" } ~> { "casp8_mut" } (q=0.2000)
+{ "brip1_mut", "flt3_mut", "gps2_mut" } ~> { "men1_mut" } (q=0.2000)
+{ "brip1_mut", "flt3_mut", "men1_mut" } ~> { "casp8_mut" } (q=0.2000)
+{ "brip1_mut", "flt3_mut", "men1_mut" } ~> { "gps2_mut" } (q=0.2000)
+{ "brip1_mut", "gps2_mut", "map3k10_mut" } ~> { "npnt_mut" } (q=0.2000)
+{ "brip1_mut", "map3k10_mut", "men1_mut" } ~> { "npnt_mut" } (q=0.2000)
+{ "casp8_mut", "flt3_mut", "gps2_mut" } ~> { "brip1_mut" } (q=0.2000)
+{ "casp8_mut", "flt3_mut", "gps2_mut" } ~> { "men1_mut" } (q=0.2000)
+{ "casp8_mut", "flt3_mut", "men1_mut" } ~> { "brip1_mut" } (q=0.2000)
+{ "casp8_mut", "flt3_mut", "men1_mut" } ~> { "gps2_mut" } (q=0.2000)
+{ "casp8_mut", "gps2_mut", "map3k10_mut" } ~> { "npnt_mut" } (q=0.2000)
+{ "casp8_mut", "map3k10_mut", "men1_mut" } ~> { "npnt_mut" } (q=0.2000)
+{ "flt3_mut", "gps2_mut", "npnt_mut" } ~> { "men1_mut" } (q=0.2000)
+{ "flt3_mut", "men1_mut", "npnt_mut" } ~> { "gps2_mut" } (q=0.2000)
+{ "gps2_mut", "map3k10_mut", "npnt_mut" } ~> { "brip1_mut" } (q=0.2000)
+{ "gps2_mut", "map3k10_mut", "npnt_mut" } ~> { "casp8_mut" } (q=0.2000)
+{ "map3k10_mut", "men1_mut", "npnt_mut" } ~> { "brip1_mut" } (q=0.2000)
+{ "map3k10_mut", "men1_mut", "npnt_mut" } ~> { "casp8_mut" } (q=0.2000)
+{ "brip1_mut", "casp8_mut", "gps2_mut" } ~> { "overall_survival_months" } (q=0.2000)
+{ "brip1_mut", "flt3_mut", "men1_mut" } ~> { "overall_survival_months" } (q=0.2000)
+{ "brip1_mut", "gps2_mut", "map3k10_mut" } ~> { "overall_survival_months" } (q=0.2000)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (2 dependencies)
+----------------------------------------
+{ "age_at_diagnosis" } -> { "flt3_mut", "inferred_menopausal_state" }
+{ "overall_survival_months" } -> { "flt3_mut" }
+
+Layer 2 (4 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "nottingham_prognostic_index" } -> { "brip1_mut", "casp8_mut", "gps2_mut", "map3k10_mut", "men1_mut", "npnt_mut" }
+{ "age_at_diagnosis", "overall_survival_months" } -> { "brip1_mut", "casp8_mut", "gps2_mut", "map3k10_mut", "men1_mut", "nottingham_prognostic_index", "npnt_mut" }
+{ "inferred_menopausal_state", "overall_survival_months" } -> { "brip1_mut" }
+{ "nottingham_prognostic_index", "overall_survival_months" } -> { "age_at_diagnosis", "brip1_mut", "casp8_mut", "gps2_mut", "inferred_menopausal_state", "map3k10_mut", "men1_mut", "npnt_mut" }
+
+
+##################################################
+Hyperedge H2
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (2 dependencies)
+----------------------------------------
+{ "cancer_type_detailed" } ~> { "tumor_other_histologic_subtype" } (q=0.0667)
+{ "oncotree_code" } ~> { "tumor_other_histologic_subtype" } (q=0.0667)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (3 dependencies)
+----------------------------------------
+{ "cancer_type_detailed" } -> { "oncotree_code" }
+{ "oncotree_code" } -> { "cancer_type_detailed" }
+{ "tumor_other_histologic_subtype" } -> { "cancer_type_detailed", "oncotree_code" }
+
+
+##################################################
+Hyperedge H3
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (6 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "overall_survival_months" } ~> { "pam50_+_claudin-low_subtype" } (q=0.0082)
+{ "age_at_diagnosis" } ~> { "pam50_+_claudin-low_subtype" } (q=0.0139)
+{ "pam50_+_claudin-low_subtype" } ~> { "overall_survival_months" } (q=0.1490)
+{ "pam50_+_claudin-low_subtype" } ~> { "age_at_diagnosis" } (q=0.1539)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 2 (1 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "overall_survival_months" } -> { "pam50_+_claudin-low_subtype" }
+
+
+##################################################
+Hyperedge H4
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (19 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "nrg3_mut" } (q=0.0021)
+{ "overall_survival_months" } ~> { "tumor_other_histologic_subtype" } (q=0.0052)
+{ "age_at_diagnosis" } ~> { "tumor_other_histologic_subtype" } (q=0.0074)
+{ "overall_survival_months" } ~> { "cancer_type_detailed" } (q=0.0078)
+{ "overall_survival_months" } ~> { "oncotree_code" } (q=0.0078)
+{ "age_at_diagnosis" } ~> { "cancer_type_detailed" } (q=0.0095)
+{ "age_at_diagnosis" } ~> { "oncotree_code" } (q=0.0095)
+{ "cancer_type_detailed" } ~> { "tumor_other_histologic_subtype" } (q=0.0667)
+{ "oncotree_code" } ~> { "tumor_other_histologic_subtype" } (q=0.0667)
+{ "tumor_other_histologic_subtype" } ~> { "flt3_mut" } (q=0.1429)
+{ "tumor_other_histologic_subtype" } ~> { "nrg3_mut" } (q=0.1429)
+{ "tumor_other_histologic_subtype" } ~> { "overall_survival_months" } (q=0.1465)
+{ "tumor_other_histologic_subtype" } ~> { "age_at_diagnosis" } (q=0.1483)
+{ "cancer_type_detailed" } ~> { "flt3_mut" } (q=0.2000)
+{ "cancer_type_detailed" } ~> { "nrg3_mut" } (q=0.2000)
+{ "oncotree_code" } ~> { "flt3_mut" } (q=0.2000)
+{ "oncotree_code" } ~> { "nrg3_mut" } (q=0.2000)
+
+Layer 2 (8 dependencies)
+----------------------------------------
+{ "cancer_type_detailed", "flt3_mut" } ~> { "overall_survival_months" } (q=0.1711)
+{ "cancer_type_detailed", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1711)
+{ "flt3_mut", "oncotree_code" } ~> { "overall_survival_months" } (q=0.1711)
+{ "nrg3_mut", "oncotree_code" } ~> { "overall_survival_months" } (q=0.1711)
+{ "cancer_type_detailed", "flt3_mut" } ~> { "age_at_diagnosis" } (q=0.1722)
+{ "flt3_mut", "oncotree_code" } ~> { "age_at_diagnosis" } (q=0.1722)
+{ "cancer_type_detailed", "nrg3_mut" } ~> { "age_at_diagnosis" } (q=0.1725)
+{ "nrg3_mut", "oncotree_code" } ~> { "age_at_diagnosis" } (q=0.1725)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (5 dependencies)
+----------------------------------------
+{ "age_at_diagnosis" } -> { "flt3_mut" }
+{ "cancer_type_detailed" } -> { "oncotree_code" }
+{ "oncotree_code" } -> { "cancer_type_detailed" }
+{ "overall_survival_months" } -> { "flt3_mut", "nrg3_mut" }
+{ "tumor_other_histologic_subtype" } -> { "cancer_type_detailed", "oncotree_code" }
+
+Layer 2 (3 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "overall_survival_months" } -> { "cancer_type_detailed", "oncotree_code", "tumor_other_histologic_subtype" }
+{ "cancer_type_detailed", "overall_survival_months" } -> { "tumor_other_histologic_subtype" }
+{ "oncotree_code", "overall_survival_months" } -> { "tumor_other_histologic_subtype" }
+
+
+##################################################
+Hyperedge H5
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (6 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "overall_survival_months" } ~> { "integrative_cluster" } (q=0.0063)
+{ "age_at_diagnosis" } ~> { "integrative_cluster" } (q=0.0106)
+{ "integrative_cluster" } ~> { "overall_survival_months" } (q=0.0957)
+{ "integrative_cluster" } ~> { "age_at_diagnosis" } (q=0.0996)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 2 (1 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "overall_survival_months" } -> { "integrative_cluster" }
+
+
+##################################################
+Hyperedge H6
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (44 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "overall_survival_months" } ~> { "nottingham_prognostic_index" } (q=0.0004)
+{ "age_at_diagnosis" } ~> { "nottingham_prognostic_index" } (q=0.0006)
+{ "overall_survival_months" } ~> { "agmo_mut" } (q=0.0010)
+{ "age_at_diagnosis" } ~> { "casp8_mut" } (q=0.0010)
+{ "overall_survival_months" } ~> { "tumor_size" } (q=0.0011)
+{ "age_at_diagnosis" } ~> { "tumor_size" } (q=0.0018)
+{ "overall_survival_months" } ~> { "lymph_nodes_examined_positive" } (q=0.0018)
+{ "overall_survival_months" } ~> { "casp8_mut" } (q=0.0020)
+{ "age_at_diagnosis" } ~> { "jak1_mut" } (q=0.0021)
+{ "age_at_diagnosis" } ~> { "lymph_nodes_examined_positive" } (q=0.0033)
+{ "age_at_diagnosis" } ~> { "agmo_mut" } (q=0.0041)
+{ "nottingham_prognostic_index" } ~> { "overall_survival_months" } (q=0.0045)
+{ "nottingham_prognostic_index" } ~> { "age_at_diagnosis" } (q=0.0047)
+{ "age_at_diagnosis" } ~> { "fbxw7_mut" } (q=0.0051)
+{ "age_at_diagnosis" } ~> { "foxp1_mut" } (q=0.0062)
+{ "age_at_diagnosis" } ~> { "ptprm_mut" } (q=0.0072)
+{ "tumor_size" } ~> { "nottingham_prognostic_index" } (q=0.0103)
+{ "tumor_size" } ~> { "overall_survival_months" } (q=0.0155)
+{ "tumor_size" } ~> { "age_at_diagnosis" } (q=0.0161)
+{ "nottingham_prognostic_index" } ~> { "fbxw7_mut" } (q=0.0308)
+{ "lymph_nodes_examined_positive" } ~> { "overall_survival_months" } (q=0.0393)
+{ "lymph_nodes_examined_positive" } ~> { "age_at_diagnosis" } (q=0.0406)
+{ "nottingham_prognostic_index" } ~> { "lymph_nodes_examined_positive" } (q=0.0412)
+{ "nottingham_prognostic_index" } ~> { "casp8_mut" } (q=0.0462)
+{ "nottingham_prognostic_index" } ~> { "agmo_mut" } (q=0.0513)
+{ "nottingham_prognostic_index" } ~> { "foxp1_mut" } (q=0.0564)
+{ "nottingham_prognostic_index" } ~> { "jak1_mut" } (q=0.0564)
+{ "lymph_nodes_examined_positive" } ~> { "nottingham_prognostic_index" } (q=0.0734)
+{ "nottingham_prognostic_index" } ~> { "ptprm_mut" } (q=0.0769)
+{ "tumor_size" } ~> { "foxp1_mut" } (q=0.1077)
+{ "lymph_nodes_examined_positive" } ~> { "agmo_mut" } (q=0.1154)
+{ "lymph_nodes_examined_positive" } ~> { "casp8_mut" } (q=0.1154)
+{ "lymph_nodes_examined_positive" } ~> { "fbxw7_mut" } (q=0.1154)
+{ "lymph_nodes_examined_positive" } ~> { "foxp1_mut" } (q=0.1154)
+{ "tumor_size" } ~> { "casp8_mut" } (q=0.1231)
+{ "tumor_size" } ~> { "jak1_mut" } (q=0.1231)
+{ "tumor_size" } ~> { "lymph_nodes_examined_positive" } (q=0.1311)
+{ "tumor_size" } ~> { "agmo_mut" } (q=0.1385)
+{ "tumor_size" } ~> { "fbxw7_mut" } (q=0.1385)
+{ "lymph_nodes_examined_positive" } ~> { "tumor_size" } (q=0.1514)
+{ "lymph_nodes_examined_positive" } ~> { "jak1_mut" } (q=0.1538)
+{ "lymph_nodes_examined_positive" } ~> { "ptprm_mut" } (q=0.1538)
+
+Layer 3 (38 dependencies)
+----------------------------------------
+{ "agmo_mut", "casp8_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1807)
+{ "agmo_mut", "fbxw7_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1807)
+{ "agmo_mut", "jak1_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1829)
+{ "casp8_mut", "fbxw7_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1829)
+{ "fbxw7_mut", "jak1_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1829)
+{ "agmo_mut", "foxp1_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1852)
+{ "casp8_mut", "jak1_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1852)
+{ "fbxw7_mut", "foxp1_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1852)
+{ "casp8_mut", "foxp1_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1875)
+{ "foxp1_mut", "jak1_mut", "tumor_size" } ~> { "ptprm_mut" } (q=0.1875)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "agmo_mut", "fbxw7_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1994)
+{ "casp8_mut", "fbxw7_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "agmo_mut", "casp8_mut", "fbxw7_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "agmo_mut", "casp8_mut", "foxp1_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "agmo_mut", "casp8_mut", "jak1_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "agmo_mut", "casp8_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "agmo_mut", "casp8_mut", "fbxw7_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "fbxw7_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "foxp1_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "foxp1_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "foxp1_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "jak1_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "jak1_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "jak1_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "agmo_mut", "casp8_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "agmo_mut", "fbxw7_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "agmo_mut", "fbxw7_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "casp8_mut", "fbxw7_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "casp8_mut", "fbxw7_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "agmo_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "casp8_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "agmo_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "casp8_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (2 dependencies)
+----------------------------------------
+{ "nottingham_prognostic_index" } -> { "tumor_size" }
+{ "overall_survival_months" } -> { "fbxw7_mut", "foxp1_mut", "jak1_mut", "ptprm_mut" }
+
+Layer 2 (6 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "agmo_mut" } -> { "casp8_mut" }
+{ "age_at_diagnosis", "nottingham_prognostic_index" } -> { "agmo_mut", "casp8_mut", "fbxw7_mut", "foxp1_mut", "jak1_mut", "ptprm_mut" }
+{ "age_at_diagnosis", "overall_survival_months" } -> { "agmo_mut", "casp8_mut", "lymph_nodes_examined_positive", "nottingham_prognostic_index", "tumor_size" }
+{ "age_at_diagnosis", "tumor_size" } -> { "casp8_mut", "fbxw7_mut", "foxp1_mut", "jak1_mut", "ptprm_mut" }
+{ "nottingham_prognostic_index", "overall_survival_months" } -> { "age_at_diagnosis", "agmo_mut", "casp8_mut", "lymph_nodes_examined_positive" }
+{ "overall_survival_months", "tumor_size" } -> { "agmo_mut", "casp8_mut" }
+
+Layer 3 (2 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "lymph_nodes_examined_positive", "tumor_size" } -> { "agmo_mut" }
+{ "lymph_nodes_examined_positive", "overall_survival_months", "tumor_size" } -> { "age_at_diagnosis", "nottingham_prognostic_index" }
+
+
+##################################################
+Hyperedge H7
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (22 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "overall_survival_months" } ~> { "nottingham_prognostic_index" } (q=0.0004)
+{ "age_at_diagnosis" } ~> { "nottingham_prognostic_index" } (q=0.0006)
+{ "overall_survival_months" } ~> { "tumor_size" } (q=0.0011)
+{ "age_at_diagnosis" } ~> { "tumor_size" } (q=0.0018)
+{ "overall_survival_months" } ~> { "mutation_count" } (q=0.0024)
+{ "nottingham_prognostic_index" } ~> { "overall_survival_months" } (q=0.0045)
+{ "age_at_diagnosis" } ~> { "mutation_count" } (q=0.0045)
+{ "nottingham_prognostic_index" } ~> { "age_at_diagnosis" } (q=0.0047)
+{ "tumor_size" } ~> { "nottingham_prognostic_index" } (q=0.0103)
+{ "tumor_size" } ~> { "overall_survival_months" } (q=0.0155)
+{ "tumor_size" } ~> { "age_at_diagnosis" } (q=0.0161)
+{ "mutation_count" } ~> { "overall_survival_months" } (q=0.0384)
+{ "mutation_count" } ~> { "age_at_diagnosis" } (q=0.0404)
+{ "nottingham_prognostic_index" } ~> { "flt3_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "mutation_count" } (q=0.0907)
+{ "tumor_size" } ~> { "flt3_mut" } (q=0.1077)
+{ "mutation_count" } ~> { "nottingham_prognostic_index" } (q=0.1199)
+{ "tumor_size" } ~> { "mutation_count" } (q=0.1728)
+{ "mutation_count" } ~> { "flt3_mut" } (q=0.1852)
+{ "mutation_count" } ~> { "tumor_size" } (q=0.1910)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (3 dependencies)
+----------------------------------------
+{ "age_at_diagnosis" } -> { "flt3_mut" }
+{ "nottingham_prognostic_index" } -> { "tumor_size" }
+{ "overall_survival_months" } -> { "flt3_mut" }
+
+Layer 2 (2 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "overall_survival_months" } -> { "mutation_count", "nottingham_prognostic_index", "tumor_size" }
+{ "nottingham_prognostic_index", "overall_survival_months" } -> { "age_at_diagnosis", "mutation_count" }
+
+Layer 3 (2 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "mutation_count", "nottingham_prognostic_index" } -> { "overall_survival_months" }
+{ "mutation_count", "overall_survival_months", "tumor_size" } -> { "age_at_diagnosis", "nottingham_prognostic_index" }
+
+
+##################################################
+Hyperedge H8
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (34 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "overall_survival_months" } ~> { "nottingham_prognostic_index" } (q=0.0004)
+{ "age_at_diagnosis" } ~> { "nottingham_prognostic_index" } (q=0.0006)
+{ "overall_survival_months" } ~> { "palld_mut" } (q=0.0010)
+{ "overall_survival_months" } ~> { "tumor_size" } (q=0.0011)
+{ "age_at_diagnosis" } ~> { "tumor_size" } (q=0.0018)
+{ "overall_survival_months" } ~> { "or6a2_mut" } (q=0.0020)
+{ "overall_survival_months" } ~> { "taf4b_mut" } (q=0.0020)
+{ "age_at_diagnosis" } ~> { "nrg3_mut" } (q=0.0021)
+{ "age_at_diagnosis" } ~> { "palld_mut" } (q=0.0021)
+{ "age_at_diagnosis" } ~> { "bap1_mut" } (q=0.0041)
+{ "age_at_diagnosis" } ~> { "taf4b_mut" } (q=0.0041)
+{ "nottingham_prognostic_index" } ~> { "overall_survival_months" } (q=0.0045)
+{ "nottingham_prognostic_index" } ~> { "age_at_diagnosis" } (q=0.0047)
+{ "age_at_diagnosis" } ~> { "fbxw7_mut" } (q=0.0051)
+{ "age_at_diagnosis" } ~> { "or6a2_mut" } (q=0.0062)
+{ "tumor_size" } ~> { "nottingham_prognostic_index" } (q=0.0103)
+{ "tumor_size" } ~> { "overall_survival_months" } (q=0.0155)
+{ "tumor_size" } ~> { "age_at_diagnosis" } (q=0.0161)
+{ "nottingham_prognostic_index" } ~> { "fbxw7_mut" } (q=0.0308)
+{ "nottingham_prognostic_index" } ~> { "bap1_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "flt3_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "nrg3_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "or6a2_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "palld_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "taf4b_mut" } (q=0.0410)
+{ "tumor_size" } ~> { "taf4b_mut" } (q=0.0923)
+{ "tumor_size" } ~> { "flt3_mut" } (q=0.1077)
+{ "tumor_size" } ~> { "nrg3_mut" } (q=0.1077)
+{ "tumor_size" } ~> { "or6a2_mut" } (q=0.1077)
+{ "tumor_size" } ~> { "palld_mut" } (q=0.1231)
+{ "tumor_size" } ~> { "bap1_mut" } (q=0.1385)
+{ "tumor_size" } ~> { "fbxw7_mut" } (q=0.1385)
+
+Layer 3 (47 dependencies)
+----------------------------------------
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "nrg3_mut", "palld_mut" } ~> { "overall_survival_months" } (q=0.1994)
+{ "bap1_mut", "fbxw7_mut", "or6a2_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "fbxw7_mut", "flt3_mut", "or6a2_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "fbxw7_mut", "nrg3_mut", "or6a2_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "fbxw7_mut", "or6a2_mut", "palld_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "bap1_mut", "fbxw7_mut", "or6a2_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "or6a2_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "or6a2_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "or6a2_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "or6a2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "or6a2_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "or6a2_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "fbxw7_mut", "nrg3_mut", "or6a2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "nrg3_mut", "or6a2_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "fbxw7_mut", "nrg3_mut", "or6a2_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "palld_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "palld_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "palld_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "palld_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "taf4b_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "taf4b_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "taf4b_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "taf4b_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "palld_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "palld_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "palld_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "palld_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "palld_mut" } (q=0.2000)
+{ "fbxw7_mut", "or6a2_mut", "taf4b_mut" } ~> { "overall_survival_months" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "palld_mut" } ~> { "age_at_diagnosis" } (q=0.2000)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (3 dependencies)
+----------------------------------------
+{ "age_at_diagnosis" } -> { "flt3_mut" }
+{ "nottingham_prognostic_index" } -> { "tumor_size" }
+{ "overall_survival_months" } -> { "bap1_mut", "fbxw7_mut", "flt3_mut", "nrg3_mut" }
+
+Layer 2 (5 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "nottingham_prognostic_index" } -> { "bap1_mut", "fbxw7_mut", "nrg3_mut", "palld_mut", "taf4b_mut" }
+{ "age_at_diagnosis", "overall_survival_months" } -> { "nottingham_prognostic_index", "or6a2_mut", "palld_mut", "taf4b_mut", "tumor_size" }
+{ "age_at_diagnosis", "tumor_size" } -> { "bap1_mut", "fbxw7_mut", "nrg3_mut" }
+{ "nottingham_prognostic_index", "overall_survival_months" } -> { "age_at_diagnosis", "or6a2_mut", "palld_mut", "taf4b_mut" }
+{ "overall_survival_months", "tumor_size" } -> { "or6a2_mut", "palld_mut", "taf4b_mut" }
+
+Layer 3 (2 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "palld_mut", "tumor_size" } -> { "taf4b_mut" }
+{ "age_at_diagnosis", "taf4b_mut", "tumor_size" } -> { "palld_mut" }
+
+
+##################################################
+Hyperedge H9
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 3 (301 dependencies)
+----------------------------------------
+{ "bcas3_mut", "flt3_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1420)
+{ "bcas3_mut", "flt3_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.1429)
+{ "bcas3_mut", "flt3_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.1429)
+{ "bcas3_mut", "flt3_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.1429)
+{ "bcas3_mut", "flt3_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.1429)
+{ "bcas3_mut", "flt3_mut", "nrg3_mut" } ~> { "sik2_mut" } (q=0.1429)
+{ "bap1_mut", "bcas3_mut", "flt3_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "bap1_mut", "bcas3_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "bcas3_mut", "flt3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "bcas3_mut", "nrg3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "bcas3_mut", "nrg3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "fbxw7_mut", "flt3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "fbxw7_mut", "l1cam_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "fbxw7_mut", "nrg3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "fbxw7_mut", "nrg3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "fbxw7_mut", "ptprm_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "flt3_mut", "nrg3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "l1cam_mut", "nrg3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "nrg3_mut", "ptprm_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1658)
+{ "bap1_mut", "bcas3_mut", "flt3_mut" } ~> { "fbxw7_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "flt3_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "flt3_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "flt3_mut" } ~> { "l1cam_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "flt3_mut" } ~> { "ptprm_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.1667)
+{ "bcas3_mut", "flt3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "bcas3_mut", "flt3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "bcas3_mut", "flt3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.1667)
+{ "bcas3_mut", "flt3_mut", "sik2_mut" } ~> { "ptprm_mut" } (q=0.1667)
+{ "bcas3_mut", "nrg3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "bcas3_mut", "nrg3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "bcas3_mut", "nrg3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "bcas3_mut", "nrg3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "bcas3_mut", "nrg3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.1667)
+{ "fbxw7_mut", "flt3_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "fbxw7_mut", "flt3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "fbxw7_mut", "flt3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "fbxw7_mut", "flt3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.1667)
+{ "fbxw7_mut", "flt3_mut", "sik2_mut" } ~> { "nrg3_mut" } (q=0.1667)
+{ "fbxw7_mut", "l1cam_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "fbxw7_mut", "l1cam_mut", "ptprm_mut" } ~> { "bcas3_mut" } (q=0.1667)
+{ "fbxw7_mut", "l1cam_mut", "ptprm_mut" } ~> { "flt3_mut" } (q=0.1667)
+{ "fbxw7_mut", "l1cam_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "fbxw7_mut", "l1cam_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "sik2_mut" } ~> { "flt3_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "fbxw7_mut", "nrg3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.1667)
+{ "fbxw7_mut", "ptprm_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "fbxw7_mut", "ptprm_mut", "sik2_mut" } ~> { "bcas3_mut" } (q=0.1667)
+{ "fbxw7_mut", "ptprm_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "fbxw7_mut", "ptprm_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "flt3_mut", "nrg3_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "flt3_mut", "nrg3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "flt3_mut", "nrg3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "flt3_mut", "nrg3_mut", "ptprm_mut" } ~> { "sik2_mut" } (q=0.1667)
+{ "l1cam_mut", "nrg3_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "l1cam_mut", "nrg3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "l1cam_mut", "nrg3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "nrg3_mut", "ptprm_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.1667)
+{ "nrg3_mut", "ptprm_mut", "sik2_mut" } ~> { "flt3_mut" } (q=0.1667)
+{ "nrg3_mut", "ptprm_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.1667)
+{ "nrg3_mut", "ptprm_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.1667)
+{ "bap1_mut", "bcas3_mut", "fbxw7_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "bcas3_mut", "foxp1_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "bcas3_mut", "jak1_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "bcas3_mut", "l1cam_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "bcas3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "bcas3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "fbxw7_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "fbxw7_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "flt3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "l1cam_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "nrg3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "nrg3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "fbxw7_mut", "flt3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "fbxw7_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "fbxw7_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "fbxw7_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "flt3_mut", "foxp1_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "flt3_mut", "jak1_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "flt3_mut", "l1cam_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "flt3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "foxp1_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "jak1_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "l1cam_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bcas3_mut", "l1cam_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "flt3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "foxp1_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "jak1_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "fbxw7_mut", "l1cam_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "foxp1_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "jak1_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "jak1_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "l1cam_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "l1cam_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "l1cam_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "nrg3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "ptprm_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "foxp1_mut", "l1cam_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "foxp1_mut", "nrg3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "foxp1_mut", "nrg3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "jak1_mut", "l1cam_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "jak1_mut", "nrg3_mut", "ptprm_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "jak1_mut", "nrg3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "l1cam_mut", "nrg3_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "l1cam_mut", "ptprm_mut", "sik2_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "bap1_mut", "bcas3_mut", "fbxw7_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "fbxw7_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "fbxw7_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "foxp1_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "foxp1_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "foxp1_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "foxp1_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "foxp1_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "jak1_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "jak1_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "jak1_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "jak1_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "jak1_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "l1cam_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "l1cam_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "l1cam_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "l1cam_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "ptprm_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bap1_mut", "bcas3_mut", "sik2_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "ptprm_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "fbxw7_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "nrg3_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "sik2_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "bap1_mut", "flt3_mut", "sik2_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "bap1_mut", "l1cam_mut", "ptprm_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "bap1_mut", "l1cam_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "l1cam_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "l1cam_mut", "ptprm_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "bap1_mut", "nrg3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "nrg3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "nrg3_mut", "sik2_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "bap1_mut", "nrg3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bap1_mut", "nrg3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bap1_mut", "nrg3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "flt3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "flt3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "flt3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "fbxw7_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "foxp1_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "foxp1_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "foxp1_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "foxp1_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "jak1_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "jak1_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "jak1_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "jak1_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "l1cam_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "l1cam_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "l1cam_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "flt3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "foxp1_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bcas3_mut", "foxp1_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "foxp1_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "jak1_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bcas3_mut", "jak1_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "jak1_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "bcas3_mut", "l1cam_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "bcas3_mut", "l1cam_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "l1cam_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "l1cam_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "bcas3_mut", "l1cam_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "bcas3_mut", "l1cam_mut", "ptprm_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "fbxw7_mut", "flt3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "sik2_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "fbxw7_mut", "foxp1_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "sik2_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "fbxw7_mut", "jak1_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "fbxw7_mut", "l1cam_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "fbxw7_mut", "l1cam_mut", "sik2_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "fbxw7_mut", "l1cam_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "fbxw7_mut", "l1cam_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "sik2_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "sik2_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "nrg3_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "nrg3_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "nrg3_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "sik2_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "flt3_mut", "jak1_mut", "sik2_mut" } ~> { "ptprm_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "nrg3_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "nrg3_mut" } ~> { "fbxw7_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "nrg3_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "nrg3_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "nrg3_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "flt3_mut", "l1cam_mut", "sik2_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "flt3_mut", "ptprm_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "flt3_mut", "ptprm_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "ptprm_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "foxp1_mut", "l1cam_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "foxp1_mut", "l1cam_mut", "ptprm_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "foxp1_mut", "l1cam_mut", "ptprm_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "foxp1_mut", "l1cam_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "foxp1_mut", "l1cam_mut", "ptprm_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "foxp1_mut", "nrg3_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "foxp1_mut", "nrg3_mut", "ptprm_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "foxp1_mut", "nrg3_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "foxp1_mut", "nrg3_mut", "sik2_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "foxp1_mut", "nrg3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "foxp1_mut", "nrg3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "jak1_mut", "l1cam_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "jak1_mut", "l1cam_mut", "ptprm_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "jak1_mut", "l1cam_mut", "ptprm_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "jak1_mut", "l1cam_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "jak1_mut", "l1cam_mut", "ptprm_mut" } ~> { "sik2_mut" } (q=0.2000)
+{ "jak1_mut", "nrg3_mut", "ptprm_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "jak1_mut", "nrg3_mut", "ptprm_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "jak1_mut", "nrg3_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "jak1_mut", "nrg3_mut", "sik2_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "jak1_mut", "nrg3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "jak1_mut", "nrg3_mut", "sik2_mut" } ~> { "l1cam_mut" } (q=0.2000)
+{ "l1cam_mut", "nrg3_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "l1cam_mut", "nrg3_mut", "sik2_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "l1cam_mut", "nrg3_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "l1cam_mut", "nrg3_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+{ "l1cam_mut", "ptprm_mut", "sik2_mut" } ~> { "bap1_mut" } (q=0.2000)
+{ "l1cam_mut", "ptprm_mut", "sik2_mut" } ~> { "bcas3_mut" } (q=0.2000)
+{ "l1cam_mut", "ptprm_mut", "sik2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "l1cam_mut", "ptprm_mut", "sik2_mut" } ~> { "jak1_mut" } (q=0.2000)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (1 dependencies)
+----------------------------------------
+{ "overall_survival_months" } -> { "bap1_mut", "bcas3_mut", "fbxw7_mut", "flt3_mut", "foxp1_mut", "jak1_mut", "l1cam_mut", "nrg3_mut", "ptprm_mut", "sik2_mut" }
+
+
+##################################################
+Hyperedge H10
+##################################################
+
+========================================
+Logical Dependencies (LDs)
+========================================
+
+Layer 1 (35 dependencies)
+----------------------------------------
+{ "overall_survival_months" } ~> { "age_at_diagnosis" } (q=0.0001)
+{ "age_at_diagnosis" } ~> { "overall_survival_months" } (q=0.0001)
+{ "overall_survival_months" } ~> { "nottingham_prognostic_index" } (q=0.0004)
+{ "age_at_diagnosis" } ~> { "nottingham_prognostic_index" } (q=0.0006)
+{ "overall_survival_months" } ~> { "hdac9_mut" } (q=0.0010)
+{ "overall_survival_months" } ~> { "sbno1_mut" } (q=0.0010)
+{ "overall_survival_months" } ~> { "tumor_size" } (q=0.0011)
+{ "age_at_diagnosis" } ~> { "tumor_size" } (q=0.0018)
+{ "overall_survival_months" } ~> { "or6a2_mut" } (q=0.0020)
+{ "overall_survival_months" } ~> { "taf4b_mut" } (q=0.0020)
+{ "age_at_diagnosis" } ~> { "nrg3_mut" } (q=0.0021)
+{ "age_at_diagnosis" } ~> { "hdac9_mut" } (q=0.0031)
+{ "age_at_diagnosis" } ~> { "taf4b_mut" } (q=0.0041)
+{ "nottingham_prognostic_index" } ~> { "overall_survival_months" } (q=0.0045)
+{ "nottingham_prognostic_index" } ~> { "age_at_diagnosis" } (q=0.0047)
+{ "age_at_diagnosis" } ~> { "foxp1_mut" } (q=0.0062)
+{ "age_at_diagnosis" } ~> { "or6a2_mut" } (q=0.0062)
+{ "age_at_diagnosis" } ~> { "sbno1_mut" } (q=0.0072)
+{ "tumor_size" } ~> { "nottingham_prognostic_index" } (q=0.0103)
+{ "tumor_size" } ~> { "overall_survival_months" } (q=0.0155)
+{ "tumor_size" } ~> { "age_at_diagnosis" } (q=0.0161)
+{ "nottingham_prognostic_index" } ~> { "flt3_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "nrg3_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "or6a2_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "taf4b_mut" } (q=0.0410)
+{ "nottingham_prognostic_index" } ~> { "hdac9_mut" } (q=0.0462)
+{ "nottingham_prognostic_index" } ~> { "foxp1_mut" } (q=0.0564)
+{ "nottingham_prognostic_index" } ~> { "sbno1_mut" } (q=0.0718)
+{ "tumor_size" } ~> { "hdac9_mut" } (q=0.0769)
+{ "tumor_size" } ~> { "taf4b_mut" } (q=0.0923)
+{ "tumor_size" } ~> { "flt3_mut" } (q=0.1077)
+{ "tumor_size" } ~> { "foxp1_mut" } (q=0.1077)
+{ "tumor_size" } ~> { "nrg3_mut" } (q=0.1077)
+{ "tumor_size" } ~> { "or6a2_mut" } (q=0.1077)
+{ "tumor_size" } ~> { "sbno1_mut" } (q=0.1231)
+
+Layer 3 (56 dependencies)
+----------------------------------------
+{ "foxp1_mut", "hdac9_mut", "sbno1_mut" } ~> { "overall_survival_months" } (q=0.1662)
+{ "foxp1_mut", "hdac9_mut", "sbno1_mut" } ~> { "flt3_mut" } (q=0.1667)
+{ "foxp1_mut", "hdac9_mut", "sbno1_mut" } ~> { "nrg3_mut" } (q=0.1667)
+{ "foxp1_mut", "hdac9_mut", "sbno1_mut" } ~> { "or6a2_mut" } (q=0.1667)
+{ "foxp1_mut", "hdac9_mut", "sbno1_mut" } ~> { "taf4b_mut" } (q=0.1667)
+{ "foxp1_mut", "hdac9_mut", "sbno1_mut" } ~> { "age_at_diagnosis" } (q=0.1682)
+{ "foxp1_mut", "hdac9_mut", "sbno1_mut" } ~> { "nottingham_prognostic_index" } (q=0.1916)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1992)
+{ "flt3_mut", "foxp1_mut", "hdac9_mut" } ~> { "overall_survival_months" } (q=0.1994)
+{ "flt3_mut", "hdac9_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1994)
+{ "flt3_mut", "nrg3_mut", "sbno1_mut" } ~> { "overall_survival_months" } (q=0.1994)
+{ "foxp1_mut", "hdac9_mut", "nrg3_mut" } ~> { "overall_survival_months" } (q=0.1994)
+{ "flt3_mut", "hdac9_mut", "sbno1_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "hdac9_mut", "nrg3_mut", "sbno1_mut" } ~> { "overall_survival_months" } (q=0.1996)
+{ "foxp1_mut", "hdac9_mut", "or6a2_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "foxp1_mut", "hdac9_mut", "taf4b_mut" } ~> { "overall_survival_months" } (q=0.1998)
+{ "flt3_mut", "foxp1_mut", "hdac9_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "hdac9_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "sbno1_mut" } (q=0.2000)
+{ "flt3_mut", "foxp1_mut", "nrg3_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "hdac9_mut", "nrg3_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "hdac9_mut", "nrg3_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "hdac9_mut", "sbno1_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "hdac9_mut", "sbno1_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "hdac9_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "sbno1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "or6a2_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "sbno1_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "sbno1_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "sbno1_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "foxp1_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "hdac9_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "flt3_mut", "nrg3_mut", "taf4b_mut" } ~> { "sbno1_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "nrg3_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "nrg3_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "or6a2_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "or6a2_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "or6a2_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "taf4b_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "taf4b_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "foxp1_mut", "hdac9_mut", "taf4b_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "hdac9_mut", "nrg3_mut", "sbno1_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "hdac9_mut", "nrg3_mut", "sbno1_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "hdac9_mut", "or6a2_mut", "sbno1_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "hdac9_mut", "or6a2_mut", "sbno1_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "hdac9_mut", "or6a2_mut", "sbno1_mut" } ~> { "taf4b_mut" } (q=0.2000)
+{ "hdac9_mut", "sbno1_mut", "taf4b_mut" } ~> { "flt3_mut" } (q=0.2000)
+{ "hdac9_mut", "sbno1_mut", "taf4b_mut" } ~> { "nrg3_mut" } (q=0.2000)
+{ "hdac9_mut", "sbno1_mut", "taf4b_mut" } ~> { "or6a2_mut" } (q=0.2000)
+{ "hdac9_mut", "or6a2_mut", "sbno1_mut" } ~> { "overall_survival_months" } (q=0.2000)
+{ "hdac9_mut", "sbno1_mut", "taf4b_mut" } ~> { "overall_survival_months" } (q=0.2000)
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (3 dependencies)
+----------------------------------------
+{ "age_at_diagnosis" } -> { "flt3_mut" }
+{ "nottingham_prognostic_index" } -> { "tumor_size" }
+{ "overall_survival_months" } -> { "flt3_mut", "foxp1_mut", "nrg3_mut" }
+
+Layer 2 (5 dependencies)
+----------------------------------------
+{ "age_at_diagnosis", "nottingham_prognostic_index" } -> { "foxp1_mut", "hdac9_mut", "nrg3_mut", "taf4b_mut" }
+{ "age_at_diagnosis", "overall_survival_months" } -> { "hdac9_mut", "nottingham_prognostic_index", "or6a2_mut", "sbno1_mut", "taf4b_mut", "tumor_size" }
+{ "age_at_diagnosis", "tumor_size" } -> { "foxp1_mut", "hdac9_mut", "nrg3_mut" }
+{ "nottingham_prognostic_index", "overall_survival_months" } -> { "age_at_diagnosis", "hdac9_mut", "or6a2_mut", "sbno1_mut", "taf4b_mut" }
+{ "overall_survival_months", "tumor_size" } -> { "hdac9_mut", "or6a2_mut", "taf4b_mut" }
+
+
+##################################################
+Hyperedge H11
+##################################################
+
+
+========================================
+Functional Dependencies (FDs)
+========================================
+
+Layer 1 (1 dependencies)
+----------------------------------------
+{ "death_from_cancer" } -> { "overall_survival" }
