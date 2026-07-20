@@ -19,7 +19,7 @@ datasets/
 dependencies/
     Extracted dependencies for all datasets
     METABRIC/
-        Dependencies extracted using different hyperedge sizes
+        Dependencies extracted using different hyperedge sizes and thresholds
 
 hyperedges/
         Extracted hyperedges using different hyperedge sizes
